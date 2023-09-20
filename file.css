@@ -1,0 +1,149 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #eefdff;;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+}
+
+
+#backImg {
+    width: 100%;
+    height: 300px;
+}
+
+.content {
+    position: absolute;
+    top:10%;
+    left: 30%;
+    width: 40%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    background-color: darkcyan;
+    border-radius: 10px;
+    margin: 10px;
+    color: whitesmoke;
+
+}
+
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.add {
+    width: 61px;
+    background-color: darkcyan;
+    height: 31px;
+    border: 0;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    text-transform: capitalize;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    padding: 5px;
+    
+}
+.task {
+    border-bottom: 1px solid gray;
+background-color: transparent;
+}
+
+
+.none {
+    position: absolute;
+    right: 32px;
+    color: #335f72;
+    cursor: pointer;
+}
+
+.prog {
+    background-color: darkcyan;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.circle {
+    border: 1px #bbb8b8 solid;
+    width: 20px;
+    border-radius: 50%;
+    height: 20px;
+    margin: 15px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.7rem;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.options div {
+    display: flex;
+    text-transform: capitalize;
+    gap: 5px;
+}
+
+.drag {
+    font-size: 0.7rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.all,.active,.completed ,.clear{
+    cursor: pointer;
+    
+}
+.disapper {
+    display: none;
+}
+
+
+@media screen and (max-width:850px) {
+
+    .title {
+        font-size: 1rem;
+    }
+    .content {
+        width: 100%;
+        left: 0;
+    }
+    
+    .options {
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+}
